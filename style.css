@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header {
+    background-color: #300606f2; /* Black background */
+    color: #955d5d; 
+    text-align: center;
+    font-family: 'CustomFont'; 
+    src: url('Luxurious\ Gallery.ttf'); /* Locate the .ttf file within your directory*/
+    font-size: xx-large;
+    padding-top: 1%;
+    padding-bottom: 1%;
+      }
+
+
+.slideshow {
+    width: 100vw;
+    height: 100vw;
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background image fixed when scrolling */ 
+    background-size: cover;
+    animation: slideshow 15s ease-in-out infinite;
+    }
+@keyframes slideshow {
+    0%{
+        background-image: url(art.jpg);
+  
+     }
+     33%{ opacity:0,7;
+     }
+     34%{
+        opacity:1;
+        background-image: url(art2.JPG);
+  
+     }
+     67%{ opacity:0,7;}
+
+    100%{
+        opacity:1;
+        background-image: url(pic.jpeg);
+  
+    }
+}
